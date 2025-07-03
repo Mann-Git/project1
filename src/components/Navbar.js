@@ -2,12 +2,12 @@
 
 import React from 'react'
 
-export default function Navbar() {
+export default function Navbar(props) {
   return (
     <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">MyApp</a>
+    <a className="navbar-brand" href="/">{props.title}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span className="navbar-toggler-icon"></span>
     </button>
